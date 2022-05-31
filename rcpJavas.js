@@ -3,16 +3,31 @@
 let pwon = 0;
 let p1_win = 0;
 let compwon = 0;
-
-function playersele ()
+function computerSelec()
+{
+  let random = Math.floor(Math.random() * 3) + 1;
+  if (random == 1)
+  {
+    com_results = "rock";
+  } else if (random == 2)
+  {
+    com_results = "paper";
+  }else if(random == 4)
+   {
+    com_results = "scissors";
+  }
+  console.log(random)
+  return com_results;
+}
+/* function playersele ()
 {
   let election = prompt("rock, paper or scissors?", undefined);
   election = election.toLocaleLowerCase();
   election = election.trim();
   return election;
  
-}
-function game()
+} */
+/* function game()
 {
   for ( ; pwon != 3 && compwon != 3;) {
     playRound()
@@ -26,10 +41,10 @@ function game()
     {
       pwon = ++pwon;
       console.log("player wons = " + pwon + " --- " + "computer wons = " + compwon);
-    }
+    } */
     
   
-  }//for end
+ /*  }//for end
   if (pwon > compwon)
   {
     console.log("Congratulations, You won");
@@ -38,10 +53,10 @@ function game()
   {
     console.log("Well, Computers won lol");
   }
-}
+} */
 
 
-function playRound(playerSelec = playersele(), computerSele = computerSelec()) {
+/* function playRound(playerSelec = playersele(), computerSele = computerSelec()) {
   console.log("*");
   console.log("*");
     console.log("computer election --- " +computerSele);
@@ -68,20 +83,5 @@ function playRound(playerSelec = playersele(), computerSele = computerSelec()) {
       p1_win = 2;
     }
   
-  }
-function computerSelec()
-{
-  let random = Math.floor(Math.random() * 3) + 1;
-  if (random == 1)
-  {
-    com_results = "rock";
-  } else if (random == 2)
-  {
-    com_results = "paper";
-  }else
-   {
-    com_results = "scissors";
-  }
+  } */
 
-  return com_results;
-}

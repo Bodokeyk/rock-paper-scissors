@@ -5,20 +5,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>rcp index</title>
-    <script src="rcpJavas.js"></script>
+    <script src="rcpJavas.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <header>
-        <div class="head">
-            <h1>Welcome to the Rock paper scissors Game!!!</h1>
-            <h3> Sadly this game is still in development, so please be patient and play it on the console
-                <br> Thank you for your support uwu
-            </h3>
-            <h1>Play on the Console ========>>></h1>
-        </div>
-    </header>
+        <h1 style="min-width: 420px;">Welcome to the Rock paper scissors Game!!!</h1>
+        <img class="imh"src="images/papel.png">
+        <img class="imh" src="images/piedras.png">
+        <img class="imh" src="images/tijeras.png">
+</header>
 
 </head>
 <body>
-    
+    <div class="content-container">
+        <div class="left-div">
+            <div class="unstiled">
+            <h2> Instructions </h2>
+            <h3 style="margin-top: 10px;">To play select rock, paper or scissors and press Play round
+                , if its a tie, press any of the options and play round again. Also you can change the number or rounds to play
+                or just play all you want. Thank you for playing!!!
+            </h3>
+        </div>
+        <div class="gif-cont">
+            <img class="gif-set" title="Im not tired, im just trying to think with my eyes closed" src="images/tired.gif" alt="Kinda tired">
+        </div>
+        </div>
+        <div class=" right-div flexed">
+            <div class="mode">
+                <div class="Best-of-cont">
+                <p class="Text-bof">Best of: </p>
+                <select name="Best of" id="B-of">
+                    <option value="1">All</option>
+                    <option value="3">3 Rounds</option>
+                    <option value="5">5 Rounds</option>
+                </select>
+            </div>
+                <div class="rounds-cont">
+                    <div class="round-text">round</div>
+                    <div class="round-num">1</div>
+                </div>
+                <button class="start">Play Round</button>
+        </div>
+        <div class="log">
+            <p>log
+            </p>
+            <p>Choose Rock, paper or scissors</p>
+        </div>
+
+            <div class="r-cont">
+                <div class="imaged b1"> <img class="im1" src="images/piedras.png" alt="rock"></div>
+                <div class="imaged b2"> <img class="im1" src="images/papel.png" alt="paper"></div>
+                <div class="imaged b3"> <img class="im1" src="images/tijeras.png" alt="scissors"></div>
+            </div>
+            <div class="markers">
+                <div class="l-marker">
+                    <span>You</span>
+                    <span class="y-won">0</span>
+                    
+                </div>
+                <div class="center">
+                    <span>rounds</span>
+                    <span>won</span>
+                </div>
+                <div class="r-marker">
+                    <span>Computer</span>
+                    <span class="c-won">0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div>Copyright Ⓒ The Odin Project 2022</div>
+        <div class="copy">This is not an Official website, its just done for learning purposes, if any kind of media or content is of your property and you want me to remove it, please contact me on Discord #9293Bodokeyk, thank you</div>
+    </div>
 </body>
 </html>
