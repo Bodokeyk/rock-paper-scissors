@@ -55,13 +55,11 @@ function gameOverLog()
 
 /*Botones asignados a las elecciones*/
 let Elections = document.querySelectorAll('.imaged');
-console.log(Elections);
 for(let elec of Elections)
 {
 elec.addEventListener('click',()=> 
 {
   PlayerElection = elec.value;
-  console.log(PlayerElection);/* borrar */
 })
 } 
 
@@ -81,7 +79,6 @@ function computerSelec()
     random = Math.floor(Math.random() * 4) + 1;
 
   }
-  console.log(random)
   return random;
 }
 
@@ -110,7 +107,6 @@ function game (){
   }
   else{
     let operated = playerVal - CompuVal; 
-    console.log(operated + "value")
     
     winner(operated);
   }
